@@ -209,3 +209,28 @@ You can wire in any logger you like. In this example below, we're using [Serilog
     return new HealthCheckerBuilder()
         .WithLogger((ex, message) => serilogLogger.Error(ex, message))
         .Build();
+
+### What does the output from the endpoint look like?
+
+It's JSON and looks something like this:
+
+    {
+      "Status": "Okay",
+      "Results": [
+        {
+          "Status": "Okay",
+          "Name": "ApplicationIsRunning",
+          "Description": "Checks whether the application is running. If this check can run then it should pass.",
+          "ElapsedTime": "00:00:00.0000006"
+        },
+        {
+          "Status": "Okay",
+          "Name": "RssFeedsHealthCheck",
+          "Description": "RSS feeds are available and have non-zero items.",
+          "ElapsedTime": "00:00:00.0005336"
+        }
+      ],
+      "Message": "All okay",
+      "Timestamp": "2015-11-14T11:42:35.3040908+00:00",
+      "NotDeadYet": "0.0.10.0"
+    }
