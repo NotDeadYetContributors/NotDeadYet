@@ -24,6 +24,7 @@ namespace NotDeadYet.MVC4
             response.StatusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503;
             response.ContentType = "text/plain";
             response.Headers["Content-Disposition"] = "inline";
+            response.Cache.SetCacheability(HttpCacheability.NoCache);
             response.Write(json);
             response.End();
         }
