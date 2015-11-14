@@ -5,13 +5,15 @@ namespace NotDeadYet.Nancy
 {
     public class HealthCheckNancyModule : NancyModule
     {
+        public static string EndpointName = "/healthcheck";
+
         private readonly IHealthChecker _healthChecker;
 
         public HealthCheckNancyModule(IHealthChecker healthChecker)
         {
             _healthChecker = healthChecker;
 
-            Get["/healthcheck"] = _ => ExecuteHealthChecks();
+            Get[EndpointName] = _ => ExecuteHealthChecks();
         }
 
         private Response ExecuteHealthChecks()
