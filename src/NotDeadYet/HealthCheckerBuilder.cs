@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Reflection;
 using NotDeadYet.HealthChecks;
+using ThirdDrawer.Extensions.StringExtensionMethods;
+using ThirdDrawer.Extensions.TypeExtensionMethods;
 
 namespace NotDeadYet
 {
@@ -16,31 +18,41 @@ namespace NotDeadYet
 
         public HealthCheckerBuilder()
         {
-            _healthChecksFunc = () => new[] {new AppPoolIsOnline()};
+            _healthChecksFunc = () => ScanAssembliesForHealthChecks(typeof (ApplicationIsRunning).Assembly);
             _logError = (ex, message) => Console.WriteLine(message);
         }
 
         public HealthCheckerBuilder WithHealthChecksFromAssemblies(params Assembly[] assemblies)
         {
-            _healthChecksFunc = () => assemblies
-                                          .SelectMany(a => a.GetExportedTypes())
-                                          .Where(t => typeof (IHealthCheck).IsAssignableFrom(t))
-                                          .Select(delegate(Type t)
-                                                  {
-                                                      try
-                                                      {
-                                                          return Activator.CreateInstance(t);
-                                                      }
-                                                      catch (Exception ex)
-                                                      {
-                                                          var description = string.Format("The {0} health check type could not be instantiated.", t.FullName);
-                                                          return new ImmediateFailHealthCheck(description, ex);
-                                                      }
-                                                  })
-                                          .Cast<IHealthCheck>()
-                                          .ToArray();
+            var allAssemblies = assemblies.Union(new[] {typeof (HealthCheckerBuilder).Assembly}).ToArray();
+
+            _healthChecksFunc = () => ScanAssembliesForHealthChecks(allAssemblies);
 
             return this;
+        }
+
+        private static IHealthCheck[] ScanAssembliesForHealthChecks(params Assembly[] assemblies)
+        {
+            return assemblies
+                .SelectMany(a => a.GetExportedTypes())
+                .Where(t => t.IsAssignableTo<IHealthCheck>())
+                .Where(t => t.IsInstantiable())
+                .Distinct()
+                .OrderBy(t => t.FullName)
+                .Select(delegate(Type t)
+                        {
+                            try
+                            {
+                                return Activator.CreateInstance(t);
+                            }
+                            catch (Exception ex)
+                            {
+                                var description = "The {0} health check type could not be instantiated.".FormatWith(t.FullName);
+                                return new ImmediateFailHealthCheck(description, ex);
+                            }
+                        })
+                .Cast<IHealthCheck>()
+                .ToArray();
         }
 
         public HealthCheckerBuilder WithHealthChecks(GetHealthChecks healthChecksFunc)

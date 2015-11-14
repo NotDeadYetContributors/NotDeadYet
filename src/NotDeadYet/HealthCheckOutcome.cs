@@ -29,5 +29,10 @@ namespace NotDeadYet
         {
             get { return _message; }
         }
+
+        public string NotDeadYet
+        {
+            get { return typeof (HealthCheckOutcome).Assembly.GetName().Version.ToString(); }
+        }
     }
 }

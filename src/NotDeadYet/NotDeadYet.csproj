@@ -37,6 +37,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="ThirdDrawer, Version=1.1.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThirdDrawer.1.1.9.0\lib\net40\ThirdDrawer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HealthCheckerBuilder.cs" />
@@ -45,7 +49,7 @@
     <Compile Include="ImmediateFailHealthCheck.cs" />
     <Compile Include="Results\FailedIndividualHealthCheckResult.cs" />
     <Compile Include="Results\HealthCheckStatus.cs" />
-    <Compile Include="HealthChecks\AppPoolIsOnline.cs" />
+    <Compile Include="HealthChecks\ApplicationIsRunning.cs" />
     <Compile Include="HealthChecker.cs" />
     <Compile Include="HealthCheckFailedException.cs" />
     <Compile Include="IHealthCheck.cs" />
@@ -55,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NotDeadYet.nuspec" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

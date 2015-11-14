@@ -2,7 +2,7 @@ using System;
 
 namespace NotDeadYet
 {
-    internal class ImmediateFailHealthCheck : IHealthCheck
+    internal sealed class ImmediateFailHealthCheck : IHealthCheck
     {
         private readonly string _description;
         private readonly Exception _exception;
@@ -21,6 +21,10 @@ namespace NotDeadYet
         public void Check()
         {
             throw new HealthCheckFailedException(_description, _exception);
+        }
+
+        public void Dispose()
+        {
         }
     }
 }

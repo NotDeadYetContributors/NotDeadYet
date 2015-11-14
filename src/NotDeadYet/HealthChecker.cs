@@ -2,6 +2,8 @@
 using System.Diagnostics;
 using System.Linq;
 using NotDeadYet.Results;
+using ThirdDrawer.Extensions.CollectionExtensionMethods;
+using ThirdDrawer.Extensions.StringExtensionMethods;
 
 namespace NotDeadYet
 {
@@ -49,6 +51,10 @@ namespace NotDeadYet
                 .OrderBy(r => r.Name)
                 .ToArray();
 
+            healthChecks
+                .Do(hc => hc.Dispose())
+                .Done();
+
             var overallStatus = individualResults
                                     .Where(r => r.Status == HealthCheckStatus.NotOkay)
                                     .Any()
@@ -76,7 +82,7 @@ namespace NotDeadYet
             catch (Exception ex)
             {
                 sw.Stop();
-                var message = string.Format("Health check {0} failed: {1}", healthCheckName, ex.Message);
+                var message = "Health check {0} failed: {1}".FormatWith(healthCheckName, ex.Message);
                 _logException(ex, message);
                 return new FailedIndividualHealthCheckResult(healthCheckName, healthCheck.Description, ex.Message, sw.Elapsed);
             }

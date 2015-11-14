@@ -12,7 +12,7 @@ namespace NotDeadYet.UnitTests
         public override void When()
         {
             var healthChecker = new HealthCheckerBuilder()
-                .WithHealthChecks(() => new[] {new AppPoolIsOnline()})
+                .WithHealthChecks(() => new[] {new ApplicationIsRunning()})
                 .Build();
             _result = healthChecker.Check();
         }
