@@ -49,7 +49,6 @@
     <Compile Include="Configuration\HealthCheckerConfiguration.cs" />
     <Compile Include="HealthCheckOutcome.cs" />
     <Compile Include="IHealthChecker.cs" />
-    <Compile Include="ImmediateFailHealthCheck.cs" />
     <Compile Include="Results\FailedIndividualHealthCheckResult.cs" />
     <Compile Include="Results\HealthCheckStatus.cs" />
     <Compile Include="HealthChecks\ApplicationIsRunning.cs" />

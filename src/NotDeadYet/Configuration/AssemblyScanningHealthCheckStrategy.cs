@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using ThirdDrawer.Extensions.StringExtensionMethods;
 using ThirdDrawer.Extensions.TypeExtensionMethods;
 
 namespace NotDeadYet.Configuration
@@ -29,15 +28,7 @@ namespace NotDeadYet.Configuration
 
         private static IHealthCheck InstantiateHealthCheck(Type healthCheckType)
         {
-            try
-            {
-                return (IHealthCheck) Activator.CreateInstance(healthCheckType);
-            }
-            catch (Exception ex)
-            {
-                var description = "The {0} health check type could not be instantiated.".FormatWith(healthCheckType.FullName);
-                return new ImmediateFailHealthCheck(description, ex);
-            }
+            return (IHealthCheck) Activator.CreateInstance(healthCheckType);
         }
     }
 }
