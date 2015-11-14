@@ -1,0 +1,29 @@
+﻿using Nancy;
+using NotDeadYet.Results;
+
+namespace NotDeadYet.Nancy
+{
+    public class HealthCheckNancyModule : NancyModule
+    {
+        private readonly IHealthChecker _healthChecker;
+
+        public HealthCheckNancyModule(IHealthChecker healthChecker)
+        {
+            _healthChecker = healthChecker;
+
+            Get["/healthcheck"] = _ => ExecuteHealthChecks();
+        }
+
+        private Response ExecuteHealthChecks()
+        {
+            var result = _healthChecker.Check();
+            var statusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503;
+            var response = Response.AsJson(result)
+                                   .WithStatusCode(statusCode)
+                                   .WithContentType("text/plain")
+                                   .WithHeader("Content-Disposition", "inline")
+                                   .WithHeader("Cache-Control", "no-cache");
+            return response;
+        }
+    }
+}
