@@ -119,7 +119,7 @@ Then, in your RouteConfig.cs:
 
 In your Package Manager Console:
 
-    Install-Package NotDeadYet.MVC4
+    Install-Package NotDeadYet.Nancy
 
 Then, in your bootstrapper:
 
