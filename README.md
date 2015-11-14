@@ -173,7 +173,7 @@ NotDeadYet is designed to work both with and without an IoC container. There's a
             builder.RegisterAssemblyTypes(ThisAssembly, typeof (IHealthCheck).Assembly)
                 .Where(t => t.IsAssignableTo<IHealthCheck>())
                 .As<IHealthCheck>()
-                .ExternallyOwned();
+                .InstancePerDependency();
 
             builder.Register(CreateHealthChecker)
                 .As<IHealthChecker>()
