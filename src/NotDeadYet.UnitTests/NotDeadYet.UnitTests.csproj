@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FD121DC-D464-400E-8561-3F3FC7359BAA}</ProjectGuid>
+    <ProjectGuid>{871AB009-036A-41A3-90A4-B3F38DEF5702}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NotDeadYet</RootNamespace>
-    <AssemblyName>NotDeadYet</AssemblyName>
+    <RootNamespace>NotDeadYet.UnitTests</RootNamespace>
+    <AssemblyName>NotDeadYet.UnitTests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Shouldly, Version=2.6.0.0, Culture=neutral, PublicKeyToken=6042cbcb05cbc941, processorArchitecture=MSIL">
+      <HintPath>..\packages\Shouldly.2.6.0\lib\net40\Shouldly.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,19 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HealthCheckerBuilder.cs" />
-    <Compile Include="HealthCheckOutcome.cs" />
-    <Compile Include="IHealthChecker.cs" />
-    <Compile Include="ImmediateFailHealthCheck.cs" />
-    <Compile Include="Results\FailedIndividualHealthCheckResult.cs" />
-    <Compile Include="Results\HealthCheckStatus.cs" />
-    <Compile Include="HealthChecks\AppPoolIsOnline.cs" />
-    <Compile Include="HealthChecker.cs" />
-    <Compile Include="HealthCheckFailedException.cs" />
-    <Compile Include="IHealthCheck.cs" />
-    <Compile Include="Results\IndividualHealthCheckResult.cs" />
+    <Compile Include="UnitTest.cs" />
+    <Compile Include="WhenAllHealthChecksPass.cs" />
+    <Compile Include="WhenTheHealthCheckerIsGivenNoHealthChecks.cs" />
+    <Compile Include="WhenTheTestHarnessRuns.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Results\SuccessfulIndividualHealthCheckResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NotDeadYet\NotDeadYet.csproj">
+      <Project>{8FD121DC-D464-400E-8561-3F3FC7359BAA}</Project>
+      <Name>NotDeadYet</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
