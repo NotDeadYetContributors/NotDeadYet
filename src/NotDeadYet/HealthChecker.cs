@@ -29,6 +29,8 @@ namespace NotDeadYet
 
         public HealthCheckOutcome Check()
         {
+            var now = DateTimeOffset.UtcNow;
+
             IHealthCheck[] healthChecks;
             try
             {
@@ -37,12 +39,12 @@ namespace NotDeadYet
             catch (Exception ex)
             {
                 _logException(ex, Messages.CannotCreateHealthCheckersMessage);
-                return new HealthCheckOutcome(HealthCheckStatus.NotOkay, Messages.CannotCreateHealthCheckersMessage, new IndividualHealthCheckResult[0]);
+                return new HealthCheckOutcome(HealthCheckStatus.NotOkay, Messages.CannotCreateHealthCheckersMessage, new IndividualHealthCheckResult[0], now);
             }
 
             if (healthChecks.Length == 0)
             {
-                return new HealthCheckOutcome(HealthCheckStatus.NotOkay, Messages.NoHealthCheckersProvidedMessage, new IndividualHealthCheckResult[0]);
+                return new HealthCheckOutcome(HealthCheckStatus.NotOkay, Messages.NoHealthCheckersProvidedMessage, new IndividualHealthCheckResult[0], now);
             }
 
             var individualResults = healthChecks
@@ -66,7 +68,7 @@ namespace NotDeadYet
                               ? Messages.AllOkayMessage
                               : Messages.OneOrMoreHealthChecksFailedMessage;
 
-            return new HealthCheckOutcome(overallStatus, message, individualResults);
+            return new HealthCheckOutcome(overallStatus, message, individualResults, now);
         }
 
         private IndividualHealthCheckResult CheckIndividual(IHealthCheck healthCheck)

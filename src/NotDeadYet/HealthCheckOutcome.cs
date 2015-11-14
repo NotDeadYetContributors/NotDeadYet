@@ -1,3 +1,4 @@
+using System;
 using NotDeadYet.Results;
 
 namespace NotDeadYet
@@ -6,13 +7,15 @@ namespace NotDeadYet
     {
         private readonly string _message;
         private readonly IndividualHealthCheckResult[] _results;
+        private readonly DateTimeOffset _timestamp;
         private readonly HealthCheckStatus _status;
 
-        public HealthCheckOutcome(HealthCheckStatus status, string message, IndividualHealthCheckResult[] results)
+        public HealthCheckOutcome(HealthCheckStatus status, string message, IndividualHealthCheckResult[] results, DateTimeOffset timestamp)
         {
             _status = status;
             _message = message;
             _results = results;
+            _timestamp = timestamp;
         }
 
         public HealthCheckStatus Status
@@ -28,6 +31,11 @@ namespace NotDeadYet
         public string Message
         {
             get { return _message; }
+        }
+
+        public DateTimeOffset Timestamp
+        {
+            get { return _timestamp; }
         }
 
         public string NotDeadYet
