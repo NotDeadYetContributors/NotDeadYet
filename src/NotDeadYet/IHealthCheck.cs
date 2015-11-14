@@ -2,7 +2,7 @@
 
 namespace NotDeadYet
 {
-    public interface IHealthCheck: IDisposable
+    public interface IHealthCheck : IDisposable
     {
         string Description { get; }
         void Check();

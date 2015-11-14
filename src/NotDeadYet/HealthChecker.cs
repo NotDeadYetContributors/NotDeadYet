@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using NotDeadYet.Configuration;
 using NotDeadYet.Results;
 using ThirdDrawer.Extensions.CollectionExtensionMethods;
 using ThirdDrawer.Extensions.StringExtensionMethods;
@@ -17,10 +18,10 @@ namespace NotDeadYet
             public const string CannotCreateHealthCheckersMessage = "A catastrophic failure occurred. We can't even load our health checks!";
         }
 
-        private readonly HealthCheckerBuilder.GetHealthChecks _healthChecksFunc;
-        private readonly HealthCheckerBuilder.LogError _logException;
+        private readonly HealthCheckerConfiguration.GetHealthChecks _healthChecksFunc;
+        private readonly HealthCheckerConfiguration.LogError _logException;
 
-        public HealthChecker(HealthCheckerBuilder.GetHealthChecks healthChecksFunc, HealthCheckerBuilder.LogError logException)
+        public HealthChecker(HealthCheckerConfiguration.GetHealthChecks healthChecksFunc, HealthCheckerConfiguration.LogError logException)
         {
             _healthChecksFunc = healthChecksFunc;
             _logException = logException;
