@@ -10,17 +10,16 @@ namespace NotDeadYet.Samples.MVC4
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            var thisAssembly = typeof (MvcApplication).Assembly;
+
             var healthChecker = new HealthCheckerBuilder()
-                .WithHealthChecksFromAssemblies(typeof(MvcApplication).Assembly)
+                .WithHealthChecksFromAssemblies(thisAssembly)
                 .Build();
 
             routes.RegisterHealthCheck(healthChecker);
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            routes.MapRoute("Default", "{controller}/{action}/{id}", new {controller = "Home", action = "Index", id = UrlParameter.Optional}
+                );
         }
     }
 }
