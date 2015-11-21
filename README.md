@@ -4,19 +4,18 @@
 
 ### Why do I want this?
 
-When scaling out a web applications, one of the first pieces of kit encountered is a load balancer. When deploying a new version of application
-we generally pull one machine out of the load-balanced pool, upgrade it and then put it back into the pool before deploying to the next one.
+To easily generate something like this: [http://www.uglybugger.org/healthcheck](http://www.uglybugger.org/healthcheck).
 
-NotDeadYet makes it easy to give load balancers a custom endpoint to do health checks. If we monitor just the index page of our application, it's
-quite likely that we'll put the instance back into the pool before it's properly warmed up. It would be a whole lot nicer if we had an easy way to
-get the load balancer to wait until, for instance:
+When scaling out a web applications, one of the first pieces of kit encountered is a load balancer. When deploying a new version of application we generally pull one machine out of the load-balanced pool, upgrade it and then put it back into the pool before deploying to the next one.
+
+NotDeadYet makes it easy to give load balancers a custom endpoint to do health checks. If we monitor just the index page of our application, it's quite likely that we'll put the instance back into the pool before it's properly warmed up. It would be a whole lot nicer if we had an easy way to get the load balancer to wait until, for instance:
 
 * We can connect to any databases we need.
 * Redis is available.
 * We've precompiled any Razor views we care about.
 * The CPU on the instance has stopped spiking.
 
-NotDeadYet makes it easy to add a `/healthcheck` endpoint that will return a 503 until the instance is ready to go, and a 200 once all is well.
+NotDeadYet makes it easy to add a `/healthcheck` endpoint that will return a 503 until the instance is ready to go, and a 200 once all is well. This plays nicely with New Relic, Amazon's ELB, Pingdom and most other monitoring and load balancing tools.
 
 ### Awesome! How do I get it?
 
