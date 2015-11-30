@@ -3,7 +3,7 @@ using System.Web.Routing;
 
 namespace NotDeadYet.MVC4
 {
-    public class ExactMatchConstraint : IRouteConstraint
+    internal class ExactMatchConstraint : IRouteConstraint
     {
         public bool Match(HttpContextBase httpContext, Route route, string parameterName, RouteValueDictionary values, RouteDirection routeDirection)
         {

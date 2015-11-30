@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigExtensions.cs" />
+    <Compile Include="ExactMatchConstraint.cs" />
     <Compile Include="HealthCheckMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
