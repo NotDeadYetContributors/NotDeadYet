@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExactMatchConstraint.cs" />
     <Compile Include="RouteCollectionExtensions.cs" />
     <Compile Include="HealthCheckHttpHandler.cs" />
     <Compile Include="HealthCheckRouteHandler.cs" />
