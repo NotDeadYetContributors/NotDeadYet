@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Reflection;
 using NotDeadYet.Configuration;
 using NotDeadYet.HealthChecks;
@@ -9,6 +10,7 @@ namespace NotDeadYet
     {
         private HealthCheckerConfiguration.GetHealthChecks _healthChecksFunc = new AssemblyScanningHealthCheckStrategy(typeof (ApplicationIsRunning).Assembly).ScanForHealthChecks;
         private HealthCheckerConfiguration.LogError _logError = new DefaultLoggingStrategy().LogError;
+        private TimeSpan _timeout = TimeSpan.FromSeconds(5);
 
         public HealthCheckerBuilder WithHealthChecksFromAssemblies(params Assembly[] assemblies)
         {
@@ -30,9 +32,15 @@ namespace NotDeadYet
             return this;
         }
 
+        public HealthCheckerBuilder WithTimeout(TimeSpan timeout)
+        {
+            _timeout = timeout;
+            return this;
+        }
+
         public IHealthChecker Build()
         {
-            var healthChecker = new HealthChecker(_healthChecksFunc, _logError);
+            var healthChecker = new HealthChecker(_healthChecksFunc, _logError, _timeout);
             return healthChecker;
         }
     }

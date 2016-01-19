@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using NotDeadYet.Configuration;
 using NotDeadYet.Results;
 using ThirdDrawer.Extensions.CollectionExtensionMethods;
@@ -20,11 +21,13 @@ namespace NotDeadYet
 
         private readonly HealthCheckerConfiguration.GetHealthChecks _healthChecksFunc;
         private readonly HealthCheckerConfiguration.LogError _logException;
+        private readonly TimeSpan _timeout;
 
-        public HealthChecker(HealthCheckerConfiguration.GetHealthChecks healthChecksFunc, HealthCheckerConfiguration.LogError logException)
+        public HealthChecker(HealthCheckerConfiguration.GetHealthChecks healthChecksFunc, HealthCheckerConfiguration.LogError logException, TimeSpan timeout)
         {
             _healthChecksFunc = healthChecksFunc;
             _logException = logException;
+            _timeout = timeout;
         }
 
         public HealthCheckOutcome Check()
@@ -76,15 +79,24 @@ namespace NotDeadYet
             var healthCheckName = healthCheck.GetType().Name;
 
             var sw = Stopwatch.StartNew();
+            var checkTask = Task.Factory.StartNew(() => CheckIndividualInternal(healthCheck, healthCheckName, sw));
+            var checkCompletedInTime = Task.WaitAll(new Task[] {checkTask}, _timeout);
+            sw.Stop();
+
+            return checkCompletedInTime
+                       ? checkTask.Result
+                       : new FailedIndividualHealthCheckResult(healthCheckName, healthCheck.Description, "Health check timed out.", sw.Elapsed);
+        }
+
+        private IndividualHealthCheckResult CheckIndividualInternal(IHealthCheck healthCheck, string healthCheckName, Stopwatch sw)
+        {
             try
             {
                 healthCheck.Check();
-                sw.Stop();
                 return new SuccessfulIndividualHealthCheckResult(healthCheckName, healthCheck.Description, sw.Elapsed);
             }
             catch (Exception ex)
             {
-                sw.Stop();
                 var message = "Health check {0} failed: {1}".FormatWith(healthCheckName, ex.Message);
                 _logException(ex, message);
                 return new FailedIndividualHealthCheckResult(healthCheckName, healthCheck.Description, ex.Message, sw.Elapsed);
