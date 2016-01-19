@@ -209,6 +209,17 @@ You can wire in any logger you like. In this example below, we're using [Serilog
         .WithLogger((ex, message) => serilogLogger.Error(ex, message))
         .Build();
 
+### Do the health checks have a timeout?
+
+They do. All the health checks are run in parallel and there is a five-second timeout on all of them.
+
+You can configure the timeout like this:
+
+    var healthChecker = new HealthCheckerBuilder()
+        .WithHealthChecksFromAssemblies(typeof(MvcApplication).Assembly)
+		.WithTimeout(TimeSpan.FromSeconds(10))
+        .Build();
+
 ### What does the output from the endpoint look like?
 
 It's JSON and looks something like this:
