@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NotDeadYet.MVC4</id>
-    <version>$version$</version>
+    <version>$version$$versionSuffix$</version>
     <title>NotDeadYet.MVC4</title>
     <authors>Andrew Harcourt</authors>
     <owners>Andrew Harcourt</owners>

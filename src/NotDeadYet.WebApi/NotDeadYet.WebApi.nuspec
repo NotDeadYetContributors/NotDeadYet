@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NotDeadYet.WebApi</id>
-    <version>$version$</version>
+    <version>$version$$versionSuffix$</version>
     <title>NotDeadYet.WebApi</title>
     <authors>Andrew Harcourt</authors>
     <owners>Andrew Harcourt</owners>
