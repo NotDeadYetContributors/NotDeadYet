@@ -120,7 +120,7 @@ In your Package Manager Console:
 
     Install-Package NotDeadYet.Nancy
 
-Then, in your bootstrapper:
+Then register NotDeadYet with your IOC container. For example, in your bootstrapper (inherited from `DefaultNancyBootstrapper`), in the `ApplicationStartup` override method:
 
     var thisAssembly = typeof (Bootstrapper).Assembly;
     var notDeadYetAssembly = typeof (IHealthChecker).Assembly;
@@ -130,6 +130,8 @@ Then, in your bootstrapper:
         .Build();
 
     container.Register(healthChecker);
+
+See the [Nancy sample bootstrapper](https://github.com/uglybugger/NotDeadYet/blob/master/src/Samples/NotDeadYet.Samples.Nancy/Bootstrapper.cs) for an example.
 
 ## FAQ
 
