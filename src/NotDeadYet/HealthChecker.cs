@@ -90,17 +90,25 @@ namespace NotDeadYet
 
         private IndividualHealthCheckResult CheckIndividualInternal(IHealthCheck healthCheck, string healthCheckName, Stopwatch sw)
         {
+            IndividualHealthCheckResult healthCheckResult;
             try
             {
                 healthCheck.Check();
-                return new SuccessfulIndividualHealthCheckResult(healthCheckName, healthCheck.Description, sw.Elapsed);
+                healthCheckResult= new SuccessfulIndividualHealthCheckResult(healthCheckName, healthCheck.Description, sw.Elapsed);
             }
             catch (Exception ex)
             {
                 var message = "Health check {0} failed: {1}".FormatWith(healthCheckName, ex.Message);
                 _logException(ex, message);
-                return new FailedIndividualHealthCheckResult(healthCheckName, healthCheck.Description, ex.Message, sw.Elapsed);
+                healthCheckResult= new FailedIndividualHealthCheckResult(healthCheckName, healthCheck.Description, ex.Message, sw.Elapsed);
             }
+            var check = healthCheck as INestedHealthCheck;
+            if (check != null)
+            {
+                healthCheckResult.ChildrenHealthCheckResults =check.ChildrenHealthCheckResults;
+            }
+
+            return healthCheckResult;
         }
     }
 }

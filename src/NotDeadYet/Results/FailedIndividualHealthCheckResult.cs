@@ -6,7 +6,7 @@ namespace NotDeadYet.Results
     {
         private readonly string _failureReason;
 
-        internal FailedIndividualHealthCheckResult(string name, string description, string failureReason, TimeSpan elapsedTime) : base(name, description, elapsedTime)
+        public FailedIndividualHealthCheckResult(string name, string description, string failureReason, TimeSpan elapsedTime) : base(name, description, elapsedTime)
         {
             _failureReason = failureReason;
         }
