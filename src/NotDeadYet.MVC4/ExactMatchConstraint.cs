@@ -7,7 +7,7 @@ namespace NotDeadYet.MVC4
     {
         public bool Match(HttpContextBase httpContext, Route route, string parameterName, RouteValueDictionary values, RouteDirection routeDirection)
         {
-            var isMatch = string.CompareOrdinal(route.Url.Trim('/'), httpContext.Request.RawUrl.Trim('/')) == 0;
+            var isMatch = httpContext.Request.RawUrl.EndsWith(route.Url);
             return isMatch;
         }
     }
