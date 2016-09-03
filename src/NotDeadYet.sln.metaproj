@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects" DefaultTargets="Build">
+  <PropertyGroup>
+    <VCTargetsPath>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\</VCTargetsPath>
+    <VCTargetsPath10>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\</VCTargetsPath10>
+    <VCTargetsPath11>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\</VCTargetsPath11>
+    <VCTargetsPath12>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\</VCTargetsPath12>
+    <VCTargetsPath14>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\</VCTargetsPath14>
+    <MSBuildToolsPath32>C:\Program Files (x86)\MSBuild\14.0\bin\</MSBuildToolsPath32>
+    <MSBuildToolsRoot>C:\Program Files (x86)\MSBuild\</MSBuildToolsRoot>
+    <MSBuildFrameworkToolsPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\</MSBuildFrameworkToolsPath>
+    <MSBuildFrameworkToolsPath32>C:\Windows\Microsoft.NET\Framework\v4.0.30319\</MSBuildFrameworkToolsPath32>
+    <MSBuildFrameworkToolsRoot>C:\Windows\Microsoft.NET\Framework\</MSBuildFrameworkToolsRoot>
+    <MSBuildRuntimeVersion>4.0.30319</MSBuildRuntimeVersion>
+    <FrameworkSDKRoot />
+    <SDK35ToolsPath />
+    <SDK40ToolsPath />
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+    <Platform>Any CPU</Platform>
+    <AspNetConfiguration>Release</AspNetConfiguration>
+    <SolutionDir>D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>NotDeadYet.sln</SolutionFileName>
+    <SolutionName>NotDeadYet</SolutionName>
+    <SolutionPath>D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.sln</SolutionPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{8FD121DC-D464-400E-8561-3F3FC7359BAA}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{871AB009-036A-41A3-90A4-B3F38DEF5702}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FF6E54D4-821A-4D01-AA75-DF71FEA5B7A7}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D146A024-6385-4D93-AB69-872093D4EAE3}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FFF62411-0116-4936-9FC5-88CFB3546AC1}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <SolutionConfiguration Include="Debug|Any CPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{8FD121DC-D464-400E-8561-3F3FC7359BAA}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{871AB009-036A-41A3-90A4-B3F38DEF5702}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FF6E54D4-821A-4D01-AA75-DF71FEA5B7A7}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D146A024-6385-4D93-AB69-872093D4EAE3}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FFF62411-0116-4936-9FC5-88CFB3546AC1}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|Any CPU">
+      <Configuration>Release</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{8FD121DC-D464-400E-8561-3F3FC7359BAA}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{871AB009-036A-41A3-90A4-B3F38DEF5702}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FF6E54D4-821A-4D01-AA75-DF71FEA5B7A7}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D146A024-6385-4D93-AB69-872093D4EAE3}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{FFF62411-0116-4936-9FC5-88CFB3546AC1}" AbsolutePath="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Release; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Warning Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Message Condition="'$(CurrentSolutionConfigurationContents)' != ''" Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" />
+  </Target>
+  <Target Name="ValidateProjects" />
+  <Target Name="GetSolutionConfigurationContents" Outputs="$(SolutionConfigurationContents)" />
+  <Target Name="Build" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(ProjectReference-&gt;Reverse())" Targets="Clean" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Rebuild" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Publish">
+    <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="NotDeadYet" Outputs="@(NotDeadYetBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYetBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet:Rebuild" Outputs="@(NotDeadYetBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYetBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet\NotDeadYet.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_UnitTests" Outputs="@(NotDeadYet_UnitTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_UnitTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_UnitTests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_UnitTests:Rebuild" Outputs="@(NotDeadYet_UnitTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_UnitTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_UnitTests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_MVC4" Outputs="@(Samples_NotDeadYet_Samples_MVC4BuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Samples_NotDeadYet_Samples_MVC4BuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_MVC4:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_MVC4:Rebuild" Outputs="@(Samples_NotDeadYet_Samples_MVC4BuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Samples_NotDeadYet_Samples_MVC4BuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_MVC4:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_MVC4" Outputs="@(NotDeadYet_MVC4BuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_MVC4BuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_MVC4:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_MVC4:Rebuild" Outputs="@(NotDeadYet_MVC4BuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_MVC4BuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_MVC4:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_Nancy" Outputs="@(Samples_NotDeadYet_Samples_NancyBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Samples_NotDeadYet_Samples_NancyBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_Nancy:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_Nancy:Rebuild" Outputs="@(Samples_NotDeadYet_Samples_NancyBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Samples_NotDeadYet_Samples_NancyBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_Nancy:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_Nancy" Outputs="@(NotDeadYet_NancyBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_NancyBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_Nancy:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_Nancy:Rebuild" Outputs="@(NotDeadYet_NancyBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_NancyBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_Nancy:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_WebApi" Outputs="@(NotDeadYet_WebApiBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_WebApiBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_WebApi:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="NotDeadYet_WebApi:Rebuild" Outputs="@(NotDeadYet_WebApiBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="NotDeadYet_WebApiBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="NotDeadYet_WebApi:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_WebApi" Outputs="@(Samples_NotDeadYet_Samples_WebApiBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Samples_NotDeadYet_Samples_WebApiBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_WebApi:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_WebApi:Rebuild" Outputs="@(Samples_NotDeadYet_Samples_WebApiBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="Samples_NotDeadYet_Samples_WebApiBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Samples\NotDeadYet_Samples_WebApi:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'D:\TeamCity\buildAgent3\work\5c9736a44a2c4005\src\Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Release; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+</Project>
