@@ -25,9 +25,10 @@ namespace NotDeadYet.WebApi
                                              var result = _healthChecker.Check();
 
                                              var json = JsonConvert.SerializeObject(result, Formatting.Indented, new StringEnumConverter());
-                                             var statusCode1 = result.Status == HealthCheckStatus.Okay ? HttpStatusCode.OK : HttpStatusCode.ServiceUnavailable;
 
-                                             var response = request.CreateResponse(statusCode1);
+                                             var statusCode = result.Status == HealthCheckStatus.NotOkay ? HttpStatusCode.ServiceUnavailable : HttpStatusCode.OK;
+
+                                             var response = request.CreateResponse(statusCode);
                                              response.Content = new StringContent(json);
                                              response.Headers.CacheControl = new CacheControlHeaderValue
                                                                              {

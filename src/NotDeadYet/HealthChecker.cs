@@ -14,6 +14,7 @@ namespace NotDeadYet
         private static class Messages
         {
             public const string AllOkayMessage = "All okay";
+            public const string OneOrMoreHealthChecksWarningMessage = "One or more health checks warning";
             public const string OneOrMoreHealthChecksFailedMessage = "One or more health checks failed";
             public const string NoHealthCheckersProvidedMessage = "No health checks were provided to the health checker.";
             public const string CannotCreateHealthCheckersMessage = "A catastrophic failure occurred. We can't even load our health checks!";
@@ -61,17 +62,15 @@ namespace NotDeadYet
                 .Do(hc => hc.Dispose())
                 .Done();
 
-            var overallStatus = individualResults
-                                    .Where(r => r.Status == HealthCheckStatus.NotOkay)
-                                    .Any()
-                                    ? HealthCheckStatus.NotOkay
-                                    : HealthCheckStatus.Okay;
+            if (individualResults.All(r => r.Status == HealthCheckStatus.Okay))
+            {
+                return new HealthCheckOutcome(HealthCheckStatus.Okay, Messages.AllOkayMessage, individualResults, now);
+            }
 
-            var message = overallStatus == HealthCheckStatus.Okay
-                              ? Messages.AllOkayMessage
-                              : Messages.OneOrMoreHealthChecksFailedMessage;
-
-            return new HealthCheckOutcome(overallStatus, message, individualResults, now);
+            //if notOkay otherwise assume warning
+            return individualResults.Any(r => r.Status == HealthCheckStatus.NotOkay)
+                       ? new HealthCheckOutcome(HealthCheckStatus.NotOkay, Messages.OneOrMoreHealthChecksFailedMessage, individualResults, now)
+                       : new HealthCheckOutcome(HealthCheckStatus.Warning, Messages.OneOrMoreHealthChecksWarningMessage, individualResults, now);
         }
 
         private IndividualHealthCheckResult CheckIndividual(IHealthCheck healthCheck)
@@ -94,6 +93,12 @@ namespace NotDeadYet
             {
                 healthCheck.Check();
                 return new SuccessfulIndividualHealthCheckResult(healthCheckName, healthCheck.Description, sw.Elapsed);
+            }
+            catch (HealthCheckWarningException ex)
+            {
+                var message = "Health check {0} warning: {1}".FormatWith(healthCheckName, ex.Message);
+                _logException(ex, message);
+                return new WarningIndividualHealthCheckResult(healthCheckName, healthCheck.Description, ex.Message, sw.Elapsed);
             }
             catch (Exception ex)
             {

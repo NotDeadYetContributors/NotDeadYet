@@ -21,7 +21,7 @@ namespace NotDeadYet.MVC4
             var response = context.Response;
             var json = JsonConvert.SerializeObject(result, Formatting.Indented, new StringEnumConverter());
 
-            response.StatusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503;
+            response.StatusCode = result.Status == HealthCheckStatus.NotOkay ? 503 : 200;
             response.ContentType = "text/plain";
             response.Headers["Content-Disposition"] = "inline";
             response.Cache.SetCacheability(HttpCacheability.NoCache);

@@ -48,6 +48,7 @@
     <Compile Include="HealthCheckerBuilder.cs" />
     <Compile Include="Configuration\HealthCheckerConfiguration.cs" />
     <Compile Include="HealthCheckOutcome.cs" />
+    <Compile Include="HealthCheckWarningException.cs" />
     <Compile Include="IHealthChecker.cs" />
     <Compile Include="Results\FailedIndividualHealthCheckResult.cs" />
     <Compile Include="Results\HealthCheckStatus.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="Results\IndividualHealthCheckResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\SuccessfulIndividualHealthCheckResult.cs" />
+    <Compile Include="Results\WarningIndividualHealthCheckResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="NotDeadYet.nuspec" />

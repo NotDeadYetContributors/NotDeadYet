@@ -58,6 +58,12 @@ By default, NotDeadYet comes with a single `ApplicationIsOnline` health check wh
                 throw new HealthCheckFailedException("I never could get the hang of Thursdays.");
             }
 
+            // Example Warning: just throw a warning if it's a Friday
+            if (DateTimeOffset.Now.DayOfWeek == DayOfWeek.Friday)
+            {
+                throw new HealthCheckWarningException("Well Fridays are better than Thursdays.");
+            }
+
             // ... otherwise we're fine.
         }
 

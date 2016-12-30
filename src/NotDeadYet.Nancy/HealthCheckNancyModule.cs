@@ -19,7 +19,8 @@ namespace NotDeadYet.Nancy
         private Response ExecuteHealthChecks()
         {
             var result = _healthChecker.Check();
-            var statusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503;
+            var statusCode = result.Status == HealthCheckStatus.NotOkay ? 503 : 200;
+
             var response = Response.AsJson(result)
                                    .WithStatusCode(statusCode)
                                    .WithContentType("text/plain")
