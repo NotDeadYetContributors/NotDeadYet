@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NotDeadYet.ServiceStack</id>
+    <version>$version$$versionSuffix$</version>
+    <title>NotDeadYet.ServiceStack</title>
+    <authors>Andrew Harcourt</authors>
+    <owners>Andrew Harcourt</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/uglybugger/NotDeadYet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ServiceStack integration for NotDeadYet.</description>
+    <releaseNotes>.</releaseNotes>
+    <copyright>Copyright 2017 Andrew Harcourt</copyright>
+    <tags>NotDeadYet health check application monitor ServiceStack</tags>
+  </metadata>
+</package>
