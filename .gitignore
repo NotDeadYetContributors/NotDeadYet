@@ -6,3 +6,7 @@ src/packages/*
 **/*.metaproj
 **/*.tmp
 
+*.ncrunchproject
+*.ncrunchsolution
+src/_NCrunch_NotDeadYet/
+src/.vs/
