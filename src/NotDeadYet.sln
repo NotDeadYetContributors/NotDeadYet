@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.WebApi", "NotDea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.WebApi", "Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj", "{FFF62411-0116-4936-9FC5-88CFB3546AC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.AspNetCore", "Samples\NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{91A25547-9280-4317-A746-159C20FEF135}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A25547-9280-4317-A746-159C20FEF135}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A25547-9280-4317-A746-159C20FEF135}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A25547-9280-4317-A746-159C20FEF135}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A25547-9280-4317-A746-159C20FEF135}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +78,6 @@ Global
 		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
+		{91A25547-9280-4317-A746-159C20FEF135} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 	EndGlobalSection
 EndGlobal
