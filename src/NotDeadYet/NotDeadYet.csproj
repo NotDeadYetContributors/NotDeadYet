@@ -2,8 +2,5 @@
   <PropertyGroup>
     <TargetFramework>net40</TargetFramework>
   </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="ThirdDrawer" Version="1.1.9.0" />
-  </ItemGroup>
 </Project>
 

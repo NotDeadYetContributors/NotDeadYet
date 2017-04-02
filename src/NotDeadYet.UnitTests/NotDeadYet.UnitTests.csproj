@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyScanningTests.cs" />
     <Compile Include="UnitTest.cs" />
     <Compile Include="WhenAllHealthChecksPass.cs" />
     <Compile Include="WhenTheHealthCheckerIsGivenNoHealthChecks.cs" />
