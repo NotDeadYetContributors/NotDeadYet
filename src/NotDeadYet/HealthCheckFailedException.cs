@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
 namespace NotDeadYet
 {
-    [Serializable]
     public class HealthCheckFailedException : Exception
     {
         public HealthCheckFailedException()
@@ -15,10 +13,6 @@ namespace NotDeadYet
         }
 
         public HealthCheckFailedException(string message, Exception inner) : base(message, inner)
-        {
-        }
-
-        protected HealthCheckFailedException(SerializationInfo info, StreamingContext context) : base(info, context)
         {
         }
     }

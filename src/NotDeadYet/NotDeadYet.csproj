@@ -1,6 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk"> 
   <PropertyGroup>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFrameworks>net40;netstandard16</TargetFrameworks>
+    
   </PropertyGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='netstandard16'">
+    <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
+  </ItemGroup>
 </Project>
 
