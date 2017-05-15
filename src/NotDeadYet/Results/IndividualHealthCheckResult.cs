@@ -1,35 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace NotDeadYet.Results
 {
-    public abstract class IndividualHealthCheckResult
+    public class IndividualHealthCheckResult
     {
-        private readonly string _description;
-        private readonly TimeSpan _elapsedTime;
-        private readonly string _name;
+        public List<IndividualHealthCheckResult> ChildrenHealthCheckResults { get; set; }
+
+        public IndividualHealthCheckResult()
+        {
+            
+        }
 
         protected IndividualHealthCheckResult(string name, string description, TimeSpan elapsedTime)
+            
         {
-            _name = name;
-            _description = description;
-            _elapsedTime = elapsedTime;
+            Name = name;
+            Description = description;
+            ElapsedTime = elapsedTime;
         }
 
-        public abstract HealthCheckStatus Status { get; }
+        public virtual HealthCheckStatus Status { get; }
 
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; set; }
 
-        public string Description
-        {
-            get { return _description; }
-        }
+        public string Description { get; set; }
 
-        public TimeSpan ElapsedTime
-        {
-            get { return _elapsedTime; }
-        }
+        public TimeSpan ElapsedTime { get; set; }
+
+
+        public bool IsParent => ChildrenHealthCheckResults?.Count > 0;
     }
 }

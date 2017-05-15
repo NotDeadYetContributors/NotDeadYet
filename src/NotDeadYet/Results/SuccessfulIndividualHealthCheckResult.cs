@@ -2,9 +2,9 @@
 
 namespace NotDeadYet.Results
 {
-    internal class SuccessfulIndividualHealthCheckResult : IndividualHealthCheckResult
+    public class SuccessfulIndividualHealthCheckResult : IndividualHealthCheckResult
     {
-        internal SuccessfulIndividualHealthCheckResult(string name, string description, TimeSpan elapsedTime)
+        public SuccessfulIndividualHealthCheckResult(string name, string description, TimeSpan elapsedTime)
             : base(name, description, elapsedTime)
         {
         }

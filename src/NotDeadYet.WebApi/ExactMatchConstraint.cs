@@ -8,7 +8,7 @@ namespace NotDeadYet.WebApi
     {
         public bool Match(HttpRequestMessage request, IHttpRoute route, string parameterName, IDictionary<string, object> values, HttpRouteDirection routeDirection)
         {
-            var isMatch = string.CompareOrdinal(route.RouteTemplate.Trim('/'), request.RequestUri.AbsolutePath.Trim('/')) == 0;
+            var isMatch = request.RequestUri.AbsolutePath.EndsWith(route.RouteTemplate);
             return isMatch;
         }
     }
