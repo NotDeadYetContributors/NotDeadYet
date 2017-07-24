@@ -21,6 +21,5 @@ deploy:
   server: https://www.myget.org/F/not-dead-yet/api/v2/package
   api_key:
     secure: +9AO8nBsAQL81Ysd57P8JaREcHlNvAONVdCtaPKfBLBryOPIlctFe/NA7MJPj08Q
-  skip_symbols: false
-  symbol_server:           # remove to push symbols to SymbolSource.org
+  skip_symbols: true
   artifact: /.*\.symbols\.nupkg/
