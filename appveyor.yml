@@ -8,14 +8,16 @@ assembly_info:
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
-  
-before_build:
-  - nuget restore src/NotDeadYet.sln
+
+init:
   - ps: >-
       if ($env:APPVEYOR_REPO_BRANCH -ne 'master' -or !$env:APPVEYOR_PULL_REQUEST_NUMBER) {
         Update-AppveyorBuild -Version "${env:APPVEYOR_BUILD_VERSION}-alpha${env:APPVEYOR_BUILD_NUMBER}"
       }
-  
+
+before_build:
+  - nuget restore src/NotDeadYet.sln
+
 build:
   parallel: true
   publish_nuget: true
