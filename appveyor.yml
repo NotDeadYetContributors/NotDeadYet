@@ -12,6 +12,10 @@ build:
   publish_nuget_symbols: true
   verbosity: minimal
   project: src/NotDeadYet.sln
+nuget:
+  account_feed: false
+  project_feed: false
+  disable_publish_on_pr: true
 test:
   assemblies:
     only:
