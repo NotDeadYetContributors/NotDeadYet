@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NotDeadYet</id>
-    <version>$version$-%APPVEYOR_REPO_BRANCH%</version>
+    <version>$version$</version>
     <title>NotDeadYet</title>
     <authors>Andrew Harcourt</authors>
     <owners>Andrew Harcourt</owners>
