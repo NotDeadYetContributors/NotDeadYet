@@ -12,9 +12,9 @@ assembly_info:
 before_build:
   - nuget restore src/NotDeadYet.sln
   - ps: >-
-    if ($env:APPVEYOR_REPO_BRANCH -ne 'master' -or !$env:APPVEYOR_PULL_REQUEST_NUMBER) {
-       Update-AppveyorBuild -Version "${env:APPVEYOR_BUILD_VERSION}-alpha${env:APPVEYOR_BUILD_NUMBER}"
-    }
+      if ($env:APPVEYOR_REPO_BRANCH -ne 'master' -or !$env:APPVEYOR_PULL_REQUEST_NUMBER) {
+        Update-AppveyorBuild -Version "${env:APPVEYOR_BUILD_VERSION}-alpha${env:APPVEYOR_BUILD_NUMBER}"
+      }
   
 build:
   parallel: true
