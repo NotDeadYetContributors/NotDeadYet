@@ -1,25 +1,33 @@
 version: 0.1.0.{build}
+platform: Any CPU
+configuration: Release
+
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+  
 before_build:
   nuget restore src/NotDeadYet.sln
+  
 build:
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
   project: src/NotDeadYet.sln
+  
 nuget:
   account_feed: false
   project_feed: false
   disable_publish_on_pr: true
+  
 test:
   assemblies:
     only:
       - '**/*test*.dll'
+      
 deploy:
   provider: NuGet
   server: https://www.myget.org/F/not-dead-yet/api/v2/package
