@@ -5,4 +5,5 @@
 src/packages/*
 **/*.metaproj
 **/*.tmp
+*.vs/
 
