@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet", "NotDeadYet\NotDeadYet.csproj", "{8FD121DC-D464-400E-8561-3F3FC7359BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet", "NotDeadYet\NotDeadYet.csproj", "{8FD121DC-D464-400E-8561-3F3FC7359BAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.UnitTests", "NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj", "{871AB009-036A-41A3-90A4-B3F38DEF5702}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.UnitTests", "NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj", "{871AB009-036A-41A3-90A4-B3F38DEF5702}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.MVC4", "Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj", "{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}"
 EndProject
@@ -25,6 +25,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.WebApi", "NotDeadYet.WebApi\NotDeadYet.WebApi.csproj", "{D146A024-6385-4D93-AB69-872093D4EAE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.WebApi", "Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj", "{FFF62411-0116-4936-9FC5-88CFB3546AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.AspNetCore", "NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{9BB875CD-3713-4816-81A7-7FE21A573039}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +66,10 @@ Global
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BB875CD-3713-4816-81A7-7FE21A573039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BB875CD-3713-4816-81A7-7FE21A573039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BB875CD-3713-4816-81A7-7FE21A573039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BB875CD-3713-4816-81A7-7FE21A573039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +78,9 @@ Global
 		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
+		{9BB875CD-3713-4816-81A7-7FE21A573039} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90C7C069-1FCA-43C1-A6E0-D9149E79897E}
 	EndGlobalSection
 EndGlobal

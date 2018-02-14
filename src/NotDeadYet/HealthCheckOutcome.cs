@@ -1,6 +1,8 @@
 using System;
-using System.Reflection;
 using NotDeadYet.Results;
+#if NETSTANDARD1_6
+    using System.Reflection;
+#endif
 
 namespace NotDeadYet
 {
