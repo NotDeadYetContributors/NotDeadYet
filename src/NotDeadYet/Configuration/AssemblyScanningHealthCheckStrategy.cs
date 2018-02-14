@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using ThirdDrawer.Extensions.TypeExtensionMethods;
 
 namespace NotDeadYet.Configuration
 {
@@ -20,8 +19,13 @@ namespace NotDeadYet.Configuration
                 .SelectMany(a => a.GetExportedTypes())
                 .OrderBy(t => t.FullName)
                 .Distinct()
-                .Where(t => t.IsAssignableTo<IHealthCheck>())
-                .Where(t => t.IsInstantiable())
+#if NETSTANDARD1_6
+                .Where(t => typeof(IHealthCheck).GetTypeInfo().IsAssignableFrom(t))
+                .Where(t => !t.GetTypeInfo().IsInterface && !t.GetTypeInfo().IsAbstract)
+#else
+                .Where(t => typeof(IHealthCheck).IsAssignableFrom(t))
+                .Where(t => !t.IsInterface && !t.IsAbstract)
+#endif
                 .Select(InstantiateHealthCheck)
                 .ToArray();
         }

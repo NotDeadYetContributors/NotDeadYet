@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using NotDeadYet.Configuration;
 using NotDeadYet.Results;
-using ThirdDrawer.Extensions.CollectionExtensionMethods;
-using ThirdDrawer.Extensions.StringExtensionMethods;
 
 namespace NotDeadYet
 {
@@ -57,9 +56,10 @@ namespace NotDeadYet
                 .OrderBy(r => r.Name)
                 .ToArray();
 
-            healthChecks
-                .Do(hc => hc.Dispose())
-                .Done();
+            foreach (var hc in healthChecks)
+            {
+                hc.Dispose();
+            }
 
             var overallStatus = individualResults
                                     .Where(r => r.Status == HealthCheckStatus.NotOkay)
@@ -97,7 +97,7 @@ namespace NotDeadYet
             }
             catch (Exception ex)
             {
-                var message = "Health check {0} failed: {1}".FormatWith(healthCheckName, ex.Message);
+                var message = string.Format(CultureInfo.CurrentUICulture, "Health check {0} failed: {1}", healthCheckName, ex.Message);
                 _logException(ex, message);
                 return new FailedIndividualHealthCheckResult(healthCheckName, healthCheck.Description, ex.Message, sw.Elapsed);
             }

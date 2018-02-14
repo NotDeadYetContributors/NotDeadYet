@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using NotDeadYet.Results;
 
 namespace NotDeadYet
@@ -40,7 +41,14 @@ namespace NotDeadYet
 
         public string NotDeadYet
         {
-            get { return typeof (HealthCheckOutcome).Assembly.GetName().Version.ToString(); }
+            get
+            {
+#if NETSTANDARD1_6
+                return typeof(HealthCheckOutcome).GetTypeInfo().Assembly.GetName().Version.ToString();
+#else
+                return typeof(HealthCheckOutcome).Assembly.GetName().Version.ToString();
+#endif
+            }
         }
     }
 }
