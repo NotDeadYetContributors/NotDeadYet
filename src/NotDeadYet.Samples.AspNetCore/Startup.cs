@@ -33,7 +33,7 @@ namespace NotDeadYet.Samples.AspNetCore
 
             app.UseMvc();
 
-            UseHealthCheck(app);
+            app.UseHealthCheck();
         }
 
         private IApplicationBuilder UseHealthCheck(IApplicationBuilder app)
@@ -44,9 +44,18 @@ namespace NotDeadYet.Samples.AspNetCore
             }
 
             return app.UseMiddleware<HealthCheckMiddleware>();
-
-
         }
+
+
+        //private IApplicationBuilder UseHealthCheck(IApplicationBuilder app, string path)
+        //{
+        //    if (app == null)
+        //    {
+        //        throw new ArgumentNullException(nameof(app));
+        //    }
+
+        //    return app.UseMiddleware<HealthCheckMiddleware>();
+        //}
 
         public static IServiceCollection AddHealthCheck(IServiceCollection services)
         {

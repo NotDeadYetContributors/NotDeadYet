@@ -29,8 +29,7 @@ namespace NotDeadYet.Samples.AspNetCore.Controllers
                 StatusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503
             };
             Response.Headers.Add("Content-Disposition", "inline");
-            Response.Headers.Add("Cache-Control", "no-cache, no-store, must-revalidate");
-            Response.Headers.Add("Pragma", "no-cache");
+            Response.Headers.Add("Cache-Control", "no-cache");
             return contentResult;
         }
 

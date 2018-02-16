@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using NotDeadYet.Results;
@@ -10,40 +9,40 @@ namespace NotDeadYet.Samples.AspNetCore
 {
     public class HealthCheckMiddleware
     {
-        private const string ApplicationText = "application/json"; // For backward compatibility with earlier version of NotDeadYet
-
         private readonly RequestDelegate _next;
-        private readonly ILogger _logger;
         private readonly IHealthChecker _healthChecker;
-
-        private readonly JsonSerializer _jsonSerializer;
-        private readonly JsonSerializer serializer = new JsonSerializer();
+        private readonly HealthCheckOptions _options;
 
 
         public HealthCheckMiddleware(
             RequestDelegate next,
-            IHealthChecker healthChecker)
+            IHealthChecker healthChecker, HealthCheckOptions options)
         {
 
             _next = next;
             _healthChecker = healthChecker ?? throw new ArgumentNullException(nameof(healthChecker));
+           _options = options;
         }
 
         public async Task Invoke(HttpContext context)
         {
-            //TODO: Add check to make sure path starts with /
-            //TODO: Perform benchmarks
-            //TODO: Investigate streaming response.
-            string path = "/healthcheck";
-
-            PathString subpath;
-            if (!context.Request.Path.StartsWithSegments(path, out subpath))
+            if (RequestHealthCheck(context.Request))
+            {
+                await ProcessRequest(context);
+            }
+            else
             {
                 await _next(context);
-                return;
             }
+        }
 
+        private bool RequestHealthCheck(HttpRequest request)
+        {
+            return request.Path.Equals(_options.Path, StringComparison.OrdinalIgnoreCase);
+        }
 
+        private async Task ProcessRequest(HttpContext context)
+        {
             var result = _healthChecker.Check();
 
             var response = context.Response;
@@ -52,10 +51,9 @@ namespace NotDeadYet.Samples.AspNetCore
             response.StatusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503;
             response.ContentType = "text/plain";
             response.Headers["Content-Disposition"] = "inline";
-            response.Headers.Add("Cache-Control", "no-cache, no-store, must-revalidate");
-            response.Headers.Add("Pragma", "no-cache");
-            await context.Response.WriteAsync(json);
+            response.Headers.Add("Cache-Control", "no-cache");
 
+            await response.WriteAsync(json);
         }
     }
 }
