@@ -21,7 +21,7 @@ namespace NotDeadYet.Samples.AspNetCore
         {
             services.AddMvc();
 
-            //services.AddHealthCheck();
+            services.AddHealthCheck();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

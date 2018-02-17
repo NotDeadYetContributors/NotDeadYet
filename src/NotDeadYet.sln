@@ -7,28 +7,28 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet", "NotDeadYet\No
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.UnitTests", "NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj", "{871AB009-036A-41A3-90A4-B3F38DEF5702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.MVC4", "Samples\NotDeadYet.Samples.MVC4\NotDeadYet.Samples.MVC4.csproj", "{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{9779E7D4-7822-4B67-BBED-0DD9310DD065}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.MVC4", "NotDeadYet.MVC4\NotDeadYet.MVC4.csproj", "{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.MVC4", "NotDeadYet.MVC4\NotDeadYet.MVC4.csproj", "{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.Nancy", "Samples\NotDeadYet.Samples.Nancy\NotDeadYet.Samples.Nancy.csproj", "{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Nancy", "NotDeadYet.Nancy\NotDeadYet.Nancy.csproj", "{FF6E54D4-821A-4D01-AA75-DF71FEA5B7A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.Nancy", "NotDeadYet.Nancy\NotDeadYet.Nancy.csproj", "{FF6E54D4-821A-4D01-AA75-DF71FEA5B7A7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CD3BA019-77D5-4F94-AE51-F31531C4E322}"
 	ProjectSection(SolutionItems) = preProject
+		..\appveyor.yml = ..\appveyor.yml
+		..\Build.ps1 = ..\Build.ps1
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.WebApi", "NotDeadYet.WebApi\NotDeadYet.WebApi.csproj", "{D146A024-6385-4D93-AB69-872093D4EAE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.WebApi", "NotDeadYet.WebApi\NotDeadYet.WebApi.csproj", "{D146A024-6385-4D93-AB69-872093D4EAE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.WebApi", "Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj", "{FFF62411-0116-4936-9FC5-88CFB3546AC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.AspNetCore", "NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{9BB875CD-3713-4816-81A7-7FE21A573039}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.Samples.AspNetCore", "NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{9BB875CD-3713-4816-81A7-7FE21A573039}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.AspNetCore", "NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj", "{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.AspNetCore", "NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj", "{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +44,6 @@ Global
 		{871AB009-036A-41A3-90A4-B3F38DEF5702}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{871AB009-036A-41A3-90A4-B3F38DEF5702}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{871AB009-036A-41A3-90A4-B3F38DEF5702}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023}.Release|Any CPU.Build.0 = Release|Any CPU
 		{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{658D5E7D-8CBE-461F-84EA-0E6BFA70A42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -81,7 +77,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9EE7CA10-BE8D-4935-96B2-7F18C2C54023} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{FC2DB945-A294-4952-A5B0-08F4AA8AC9A4} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{FFF62411-0116-4936-9FC5-88CFB3546AC1} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}
 		{9BB875CD-3713-4816-81A7-7FE21A573039} = {9779E7D4-7822-4B67-BBED-0DD9310DD065}

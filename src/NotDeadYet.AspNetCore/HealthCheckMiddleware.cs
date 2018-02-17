@@ -13,12 +13,10 @@ namespace NotDeadYet.AspNetCore
         private readonly IHealthChecker _healthChecker;
         private readonly HealthCheckOptions _options;
 
-
         public HealthCheckMiddleware(
             RequestDelegate next,
             IHealthChecker healthChecker, HealthCheckOptions options)
         {
-
             _next = next;
             _healthChecker = healthChecker ?? throw new ArgumentNullException(nameof(healthChecker));
            _options = options;
