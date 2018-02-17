@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.WebApi",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.AspNetCore", "NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{9BB875CD-3713-4816-81A7-7FE21A573039}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.AspNetCore", "NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj", "{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{9BB875CD-3713-4816-81A7-7FE21A573039}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB875CD-3713-4816-81A7-7FE21A573039}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB875CD-3713-4816-81A7-7FE21A573039}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
