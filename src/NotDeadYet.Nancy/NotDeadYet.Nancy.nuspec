@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NotDeadYet.Nancy</id>
-    <version>$version$$versionSuffix$</version>
+    <version>$version$</version>
     <title>NotDeadYet.Nancy</title>
     <authors>Andrew Harcourt</authors>
     <owners>Andrew Harcourt</owners>

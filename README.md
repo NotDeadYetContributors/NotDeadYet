@@ -1,8 +1,10 @@
 # Not Dead Yet
+[![Build status](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)](https://ci.appveyor.com/project/jamleck/NotDeadYet/branch/master)
+
 
 ## .NET application health checking made easy
 
-### Why do I want this?
+### Why do I want this? 
 
 To easily generate something like this: [http://www.uglybugger.org/healthcheck](http://www.uglybugger.org/healthcheck).
 

@@ -45,15 +45,15 @@ $versionSuffix = @{ $true = "--version-suffix=$($suffix)"; $false = ""}[$suffix 
 
 echo "build: Package version suffix is $suffix"
 echo "build: Build version suffix is $buildSuffix" 
-	
-exec { dotnet restore .\src\NotDeadYet\NotDeadYet.csproj }
-exec { dotnet restore .\src\NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj }
-exec { dotnet restore .\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj }
-exec { dotnet restore .\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj }
-exec { dotnet restore .\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj }
-exec { dotnet restore .\src\NotDeadYet.UnitTests\NotDeadYet.UnitTests.csproj }
 
-##exec { dotnet build -c Release --version-suffix=$buildSuffix -v q /nologo }
+
+exec { dotnet build .\src\NotDeadYet\NotDeadYet.csproj -c Release --version-suffix=$buildSuffix -v q /nologo}
+exec { dotnet build .\src\NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj -c Release --version-suffix=$buildSuffix -v q /nologo}
+exec { dotnet build .\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj -c Release --version-suffix=$buildSuffix -v q /nologo}
+exec { dotnet build .\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj -c Release --version-suffix=$buildSuffix -v q /nologo}
+exec { dotnet build .\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj -c Release --version-suffix=$buildSuffix -v q /nologo}
+
+#exec { dotnet build -c Release --version-suffix=$buildSuffix -v q /nologo }
 
 foreach ($test in ls src/*Tests) {
     Push-Location $test
@@ -66,10 +66,10 @@ foreach ($test in ls src/*Tests) {
     Pop-Location
 }
 
-exec { dotnet pack .\src\NotDeadYet\NotDeadYet.csproj -c Release -o ..\..\artifacts --include-symbols  $versionSuffix }
-exec { dotnet pack .\src\NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj -c Release -o ..\..\artifacts --include-symbols $versionSuffix }
-exec { dotnet pack .\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj -c Release -o ..\..\artifacts --include-symbols  $versionSuffix }
-exec { dotnet pack .\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj -c Release -o ..\..\artifacts --include-symbols $versionSuffix }
-exec { dotnet pack .\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj -c Release -o ..\..\artifacts --include-symbols $versionSuffix }
+exec { dotnet pack .\src\NotDeadYet\NotDeadYet.csproj -c Release -o ..\..\artifacts --no-build --include-symbols $versionSuffix }
+exec { dotnet pack .\src\NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj -c Release -o ..\..\artifacts --no-build --include-symbols $versionSuffix }
+exec { dotnet pack .\src\NotDeadYet.MVC4\NotDeadYet.MVC4.csproj -c Release -o ..\..\artifacts --no-build --include-symbols $versionSuffix }
+exec { dotnet pack .\src\NotDeadYet.Nancy\NotDeadYet.Nancy.csproj -c Release -o ..\..\artifacts --no-build --include-symbols $versionSuffix }
+exec { dotnet pack .\src\NotDeadYet.WebApi\NotDeadYet.WebApi.csproj -c Release -o ..\..\artifacts --no-build --include-symbols $versionSuffix }
 
 Pop-Location
