@@ -12,7 +12,7 @@ namespace NotDeadYet.UnitTests
         {
             var healthOutcome = new HealthCheckOutcome(Results.HealthCheckStatus.Okay, "Test", new Results.IndividualHealthCheckResult[0], DateTimeOffset.Now);
 
-            healthOutcome.NotDeadYet.ShouldBe("1.0.0.0");
+            healthOutcome.NotDeadYet.ShouldNotBeNullOrEmpty();
         }
     }
 }

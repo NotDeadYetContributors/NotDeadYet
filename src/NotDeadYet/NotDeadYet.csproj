@@ -2,17 +2,6 @@
 
   <PropertyGroup>
     <TargetFrameworks>net40;netstandard1.6</TargetFrameworks>
-    <PackageId>NotDeadYet</PackageId>
-     <Version>0.0.0</Version>
-    <Authors>Andrew Harcourt</Authors>
-    <Company />
-    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/uglybugger/NotDeadYet</PackageProjectUrl>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <Description>A simple way of exposing application health checks in .NET applications.</Description>
-    <PackageTags>health check application monitor</PackageTags>
-    <Copyright></Copyright>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)'=='netstandard1.6'">
