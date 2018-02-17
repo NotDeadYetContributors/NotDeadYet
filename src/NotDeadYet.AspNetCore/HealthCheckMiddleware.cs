@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using NotDeadYet.Results;
 
-namespace NotDeadYet.Samples.AspNetCore
+namespace NotDeadYet.AspNetCore
 {
     public class HealthCheckMiddleware
     {
@@ -51,7 +51,7 @@ namespace NotDeadYet.Samples.AspNetCore
             response.StatusCode = result.Status == HealthCheckStatus.Okay ? 200 : 503;
             response.ContentType = "text/plain";
             response.Headers["Content-Disposition"] = "inline";
-            response.Headers.Add("Cache-Control", "no-cache");
+            response.Headers["Cache-Control"] = "no-cache";
 
             await response.WriteAsync(json);
         }
