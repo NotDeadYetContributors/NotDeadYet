@@ -6,13 +6,13 @@ using Microsoft.Extensions.DependencyInjection;
 namespace NotDeadYet.AspNetCore
 {
     /// <summary>
-    ///     Extensions to scan for IHealthCheck classes and register them with the singleton HealthChecker class
+    ///     Extensions to scan for <see cref="IHealthCheck"/> classes and register them with the singleton <see cref="IHealthChecker"/> class
     /// </summary>
     public static class ServiceCollectionExtensions
     {
         /// <summary>
-        /// Adds IHealthChecker instance to the specified IServiceCollection.  
-        /// Scan for IHealthCheck classes in application domain and register them with the singleton IHealthChecker class.
+        /// Adds <see cref="IHealthChecker"/> instance to the specified <see cref="IServiceCollection"/>.  
+        /// Scan for <see cref="IHealthCheck"/> classes in application domain and register them with the singleton <see cref="IHealthChecker"/> class.
         /// </summary>
         public static IServiceCollection AddHealthCheck(this IServiceCollection services)
         {
@@ -22,8 +22,8 @@ namespace NotDeadYet.AspNetCore
         }
 
         /// <summary>
-        /// Adds IHealthChecker instance to the specified IServiceCollection.
-        /// Scan for IHealthCheck classes in assemblies specified and register them with the singleton HealthChecker class.
+        /// Adds <see cref="IHealthChecker"/> instance to the specified <see cref="IServiceCollection"/>. 
+        /// Scan for <see cref="IHealthCheck"/> classes in assemblies specified and register them with the singleton <see cref="IHealthChecker"/> class.
         /// </summary>
         public static IServiceCollection AddHealthCheck(this IServiceCollection services, params Type[] assemblyMarkerTypes)
         {
@@ -31,7 +31,7 @@ namespace NotDeadYet.AspNetCore
         }
 
         /// <summary>
-        /// Adds IHealthChecker instance to the specified IServiceCollection.
+        /// Adds <see cref="IHealthChecker"/> instance to the specified <see cref="IServiceCollection"/>.
         /// </summary>
         public static IServiceCollection AddHealthCheck(this IServiceCollection services, Action<HealthCheckerBuilder> healthCheckerBuilderAction)
         {
