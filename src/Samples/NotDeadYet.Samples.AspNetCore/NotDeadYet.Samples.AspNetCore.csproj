@@ -17,8 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj" />
-    <ProjectReference Include="..\NotDeadYet\NotDeadYet.csproj" />
+    <ProjectReference Include="..\..\NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj" />
   </ItemGroup>
 
 </Project>
