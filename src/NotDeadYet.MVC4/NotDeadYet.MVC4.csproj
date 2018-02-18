@@ -2,20 +2,17 @@
   <PropertyGroup>
     <TargetFramework>net40</TargetFramework>
     <PackageId>NotDeadYet.MVC4</PackageId>
-    <Product>NotDeadYet.MVC4</Product>
     <Version>0.0.0</Version>
-    <title>NotDeadYet.MVC4</title>
     <Authors>Andrew Harcourt</Authors>
-    <owners>Andrew Harcourt</owners>
+    <Description>MVC4 integration for NotDeadYet.</Description>
+    <PackageTags>NotDeadYet health check application monitor MVC4</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Copyright>Copyright 2015 Andrew Harcourt</Copyright>
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/uglybugger/NotDeadYet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/uglybugger/NotDeadYet</RepositoryUrl>
-    <Description>MVC4 integration for NotDeadYet.</Description>
-    <releaseNotes>.</releaseNotes>
-    <copyright>Copyright 2015 Andrew Harcourt</copyright>
-    <PackageTags>NotDeadYet health check application monitor MVC4</PackageTags>
-
+    <PackageReleaseNotes>.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.Web" />

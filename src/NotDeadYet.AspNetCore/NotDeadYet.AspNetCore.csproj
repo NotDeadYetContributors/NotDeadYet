@@ -1,20 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Authors>Jamleck, Andrew Harcourt</Authors>
+    <PackageId>NotDeadYet.AspNetCore</PackageId>
     <Version>0.0.0</Version>
-    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/uglybugger/NotDeadYet</PackageProjectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <Authors>Jamleck, Andrew Harcourt</Authors>
     <Description>AspNetCore integration for NotDeadYet</Description>
     <PackageTags>NotDeadYet health check application monitor AspNetCore</PackageTags>
-    <PackageId>NotDeadYet.AspNetCore</PackageId>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/uglybugger/NotDeadYet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/uglybugger/NotDeadYet</RepositoryUrl>
-    <PackageTags>NotDeadYet health check application monitor AspNetCore</PackageTags>
-    <Company />
+    <PackageReleaseNotes>.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

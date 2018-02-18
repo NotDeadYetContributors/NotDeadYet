@@ -1,20 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net40</TargetFramework>
-    <id>NotDeadYet.Nancy</id>
+    <PackageId>NotDeadYet.Nancy</PackageId>
     <Version>0.0.0</Version>
-    <title>NotDeadYet.Nancy</title>
     <Authors>Andrew Harcourt</Authors>
-    <owners>Andrew Harcourt</owners>
+    <Description>Nancy integration for NotDeadYet.</Description>
+    <PackageTags>NotDeadYet health check application monitor Nancy NancyFX</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Copyright>Copyright 2015 Andrew Harcourt</Copyright>
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/uglybugger/NotDeadYet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/uglybugger/NotDeadYet</RepositoryUrl>
-    <Description>Nancy integration for NotDeadYet.</Description>
-    <releaseNotes>.</releaseNotes>
-    <copyright>Copyright 2015 Andrew Harcourt</copyright>
-    <PackageTags>NotDeadYet health check application monitor Nancy NancyFX</PackageTags>
-
+    <PackageReleaseNotes>.</PackageReleaseNotes>
 </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Nancy" Version="1.4.4" />

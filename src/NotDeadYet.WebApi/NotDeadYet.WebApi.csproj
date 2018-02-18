@@ -1,18 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net40</TargetFramework>
-    <id>NotDeadYet.WebApi</id>
+    <PackageId>NotDeadYet.WebApi</PackageId>
     <Version>0.0.0</Version>
-    <title>NotDeadYet.WebApi</title>
     <Authors>Andrew Harcourt</Authors>
     <owners>Andrew Harcourt</owners>
+    <Description>WebApi integration for NotDeadYet.</Description>
+    <PackageTags>NotDeadYet health check application monitor WebApi</PackageTags>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Copyright>Copyright 2015 Andrew Harcourt</Copyright>
     <PackageLicenseUrl>http://opensource.org/licenses/MIT</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/uglybugger/NotDeadYet</PackageProjectUrl>
     <RepositoryUrl>https://github.com/uglybugger/NotDeadYet</RepositoryUrl>
-    <Description>WebApi integration for NotDeadYet.</Description>
-    <copyright>Copyright 2015 Andrew Harcourt</copyright>
-    <PackageTags>NotDeadYet health check application monitor WebApi</PackageTags>
+    <PackageReleaseNotes>.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="4.0.30506.0" />
