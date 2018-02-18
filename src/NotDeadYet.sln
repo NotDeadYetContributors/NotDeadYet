@@ -26,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.WebApi", "NotDea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotDeadYet.Samples.WebApi", "Samples\NotDeadYet.Samples.WebApi\NotDeadYet.Samples.WebApi.csproj", "{FFF62411-0116-4936-9FC5-88CFB3546AC1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.Samples.AspNetCore", "NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{9BB875CD-3713-4816-81A7-7FE21A573039}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.Samples.AspNetCore", ""Samples\NotDeadYet.Samples.AspNetCore\NotDeadYet.Samples.AspNetCore.csproj", "{9BB875CD-3713-4816-81A7-7FE21A573039}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotDeadYet.AspNetCore", "NotDeadYet.AspNetCore\NotDeadYet.AspNetCore.csproj", "{F1E9D55F-7DB0-45B7-A475-FA0E678EFFF1}"
 EndProject
